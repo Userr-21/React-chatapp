@@ -46,11 +46,11 @@ export default class Login extends React.Component{
     async handleSubmit(event){
         event.preventDefault();
 
-        await firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+         firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
         .then(async result =>{
             let user = result.user;
             if(user){
-                await firebase.firestore().collection('users')
+                 firebase.firestore().collection('users')
                 .where('id' , "==", user.uid)
                 .get()
                 .then(function(querySnapshot){

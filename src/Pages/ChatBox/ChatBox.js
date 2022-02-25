@@ -8,6 +8,7 @@ import moment from 'moment';
 import './ChatBox.css';
 import LoginString from '../Login/LoginString';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default class ChatBox extends React.Component{
     constructor(props){
         super(props);

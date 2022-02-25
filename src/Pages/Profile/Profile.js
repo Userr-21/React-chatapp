@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './Profile.css';
 import ReactLoading from 'react-loading';
@@ -5,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import firebase from '../../Services/firebase';
 import images from '../../ProjectImages/ProjectImages';
 import LoginString from '../Login/LoginString';
+
 
 export default class Profile extends React.Component{
     constructor(props){
